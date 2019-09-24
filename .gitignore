@@ -1,0 +1,7 @@
+log
+*.o
+*.prof
+*.gz
+*.zip
+nexusminer
+
