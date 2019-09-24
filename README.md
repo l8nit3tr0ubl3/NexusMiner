@@ -10,20 +10,20 @@ This is a Nexus Solo Miner for the Prime and Hash Proof-of-Work Channels built f
 change GPU settings regarding seiving, testing
 
 * nSievePrimesLog2
-    ** How many sieving primes log base 2 (ex: 2^20 = 1048576 sieving primes)
+     How many sieving primes log base 2 (ex: 2^20 = 1048576 sieving primes)
 
 * nSieveBitsLog2
-    ** How large the sieving array log base 2 (ex: 2^23 = 8388608 sieve bits)
+     How large the sieving array log base 2 (ex: 2^23 = 8388608 sieve bits)
 
 * nSieveIterationsLog2
-    ** How many bit arrays should be seived before testing log base 2 (ex: 2^10 = 1024 iterations)
+     How many bit arrays should be seived before testing log base 2 (ex: 2^10 = 1024 iterations)
 
 * nMaxCandidatesLog2
-    ** How large the candidate buffer is log base 2 (ex: 2^16 = 65536 candidates)
+     How large the candidate buffer is log base 2 (ex: 2^16 = 65536 candidates)
 
 * nTestLevels
-    ** How many chains deep GPU test should go before passing workload to CPU
-       (recommended to not test too deep, or CPU won't be saturated with enough work)
+     How many chains deep GPU test should go before passing workload to CPU
+     (recommended to not test too deep, or CPU won't be saturated with enough work)
 
 
 ### offsets.ini
@@ -73,12 +73,14 @@ Ensure you are on latest wallet daemon release 3.0.x or greater. Ensure wallet h
 
 ### Command Line Examples
 
+```
   ./nexusminer -ip=192.168.0.100 -port=9325 -timeout=10 -prime=0,1,2,3,4,5
   ./nexusminer -ip=192.168.0.100 -port=9325 -timeout=10 -hash=0,1,2,3,4,5
   ./nexusminer -ip=192.168.0.100 -port=9325 -timeout=10 -prime=0,1,2 -hash=3,4,5
   ./nexusminer -ip=192.168.0.100 -cpuhash=8  -testnet
   ./nexusminer -ip=192.168.0.100 -cpuprime=8 -testnet
   ./nexusminer -ip=192.168.0.100 -cpuhash=4 -cpuprime=4 -testnet
+```
 
 ## DEPENDENCIES
 
