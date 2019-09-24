@@ -10,19 +10,19 @@ This is a Nexus Solo Miner for the Prime and Hash Proof-of-Work Channels built f
 change GPU settings regarding seiving, testing
 
 * nSievePrimesLog2
-     How many sieving primes log base 2 (ex: 2^20 = 1048576 sieving primes)
+   * How many sieving primes log base 2 (ex: 2^20 = 1048576 sieving primes)
 
 * nSieveBitsLog2
-     How large the sieving array log base 2 (ex: 2^23 = 8388608 sieve bits)
+   * How large the sieving array log base 2 (ex: 2^23 = 8388608 sieve bits)
 
 * nSieveIterationsLog2
-     How many bit arrays should be seived before testing log base 2 (ex: 2^10 = 1024 iterations)
+   * How many bit arrays should be seived before testing log base 2 (ex: 2^10 = 1024 iterations)
 
 * nMaxCandidatesLog2
-     How large the candidate buffer is log base 2 (ex: 2^16 = 65536 candidates)
+   * How large the candidate buffer is log base 2 (ex: 2^16 = 65536 candidates)
 
 * nTestLevels
-     How many chains deep GPU test should go before passing workload to CPU
+   * How many chains deep GPU test should go before passing workload to CPU
      (recommended to not test too deep, or CPU won't be saturated with enough work)
 
 
